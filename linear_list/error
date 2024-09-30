@@ -1,0 +1,13 @@
+singly_linked_list.cpp:12:31: error: duplicate ‘const’
+   12 | bool GetElem( const  LinkList const p, const int index, ElemType *out ) {
+      |                               ^~~~~
+      |                               -----
+singly_linked_list.cpp: In function ‘bool GetElem(LinkList, int, ElemType*)’:
+singly_linked_list.cpp:24:18: error: request for member ‘data’ in ‘t’, which is of pointer type ‘LinkList’ {aka ‘Node*’} (maybe you meant to use ‘->’ ?)
+   24 |         *out = t.data;
+      |                  ^~~~
+singly_linked_list.cpp: At global scope:
+singly_linked_list.cpp:29:32: error: duplicate ‘const’
+   29 | void PrintList( const LinkList const p ) {
+      |                                ^~~~~
+      |                                -----
